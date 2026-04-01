@@ -106,8 +106,6 @@ const Medal = ({ honor, position, rotY, delay }: MedalProps) => {
 };
 
 const HonorsMedals = () => {
-  const isActive = usePortalStore((state) => state.activePortalId === 'projects');
-
   const medals = useMemo(() => {
     const count = HONORS.length;
     const fov = Math.PI;
